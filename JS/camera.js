@@ -12,18 +12,10 @@ class Camera extends HTMLElement {
                     
                     font-family: "PMingLiU", "標楷體", serif;
                     font-size: 11pt;
-                    line-height: 1.2;
-                }
-                #main {
-                    width: 100%;
-                    height: 100%;
-                    padding: 10px;
-                    background-color: white;
-                    box-sizing: border-box;
-
-                    
+                    line-height: 1.2;            
                 }
         </style>
+        123
         <label for="camera">開啟相機拍照：</label>
         <input type="file" id="camera" accept="image/*" capture="environment"></input>
         `;
