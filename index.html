@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./JS/MathShow.js"></script>
+    <style>
+        :root {
+            --outpadding: clamp(1vw, 1vw, 2vw);
+            --font-size: 1.5rem;
+        }
+
+        section {
+            position: fixed;
+            inset: var(--outpadding);
+            border: 5px solid black;
+            padding: var(--outpadding);
+            font-size: var(--font-size);
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <!-- <Math-Show>
+            已知 \(\displaystyle a>0\) 且 \(\displaystyle a+a^{-1}=5\), 則 \(\displaystyle
+            a^{\frac{1}{2}}-a^{-\frac{1}{2}}=\) ?
+            <br>
+            坐標平面上，函數 \(y=\sin x\) 的圖形對稱於 \(x=\dfrac{\pi}{2}\) ，如圖所示
+        </Math-Show> -->
+        <Camera-pic></Camera-pic>
+    </section>
+</body>
+
+</html>
