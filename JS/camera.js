@@ -1,15 +1,3 @@
-window.MathJax = {
-    tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']] }
-};
-
-if (!document.getElementById('mathjax-lib')) {
-    const s = document.createElement('script');
-    s.id = 'mathjax-lib';
-    s.async = true;
-    s.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js';
-    document.head.appendChild(s);
-}
-
 class Camera extends HTMLElement {
     constructor() {
         super();
@@ -40,19 +28,19 @@ class Camera extends HTMLElement {
         <input type="file" id="camera" accept="image/*" capture="environment"></input>
         `;
 
-        this._div = this.shadowRoot.querySelector('#main');
+        // this._div = this.shadowRoot.querySelector('#main');
     }
 
     connectedCallback() {
-        this._typesetOne(this._div);
+        // this._typesetOne(this._div);
     }
 
-    async _typesetOne(el) {
-        const MJ = window.MathJax;
-        if (!MJ) return;
-        if (MJ.startup?.promise) await MJ.startup.promise;
-        await MJ.typesetPromise([el]);
-    }
+    // async _typesetOne(el) {
+    //     const MJ = window.MathJax;
+    //     if (!MJ) return;
+    //     if (MJ.startup?.promise) await MJ.startup.promise;
+    //     await MJ.typesetPromise([el]);
+    // }
 
-} customElements.define("Camera-pic", Camera);
+} customElements.define("camera-pic", Camera);
 
